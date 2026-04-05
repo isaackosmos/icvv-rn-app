@@ -2,6 +2,14 @@
   "expo": {
     "name": "ICVV-RN-APP",
     "slug": "ICVV-RN-APP",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "icvv-church-app", 
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.seu-nome.icvv"
+    }
   }
 }

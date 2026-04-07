@@ -7,4 +7,5 @@ export const colors = {
   textSecondary: "#6b7280",
   placeholder: "#9ca3af",
   error: "#dc2626",
+  dark: "#0f172a",
 };

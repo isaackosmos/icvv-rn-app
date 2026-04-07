@@ -8,9 +8,9 @@ interface User {
 interface AuthContextData {
   user: User | null;
   login: (email: string, password: string) => Promise<void>;
-  logout: () => void;
-  resetPassword: (email: string) => void;
-  signup: (email: string, password: string, name: string) => void;
+  signup: (email: string, password: string, name: string) => Promise<void>;
+  logout: () => Promise<void>;
+  resetPassword: (email: string) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
@@ -22,21 +22,21 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setUser({ email });
   }
 
-  function logout() {
-    setUser(null);
-  }
-
-  async function resetPassword(email: string) {
-    console.log("reset password para:", email);
-  }
-
   async function signup(email: string, password: string, name: string) {
     setUser({ email, name });
   }
 
+  async function logout() {
+    setUser(null);
+  }
+
+  async function resetPassword(email: string) {
+    console.log("reset para:", email);
+  }
+
   return (
     <AuthContext.Provider
-      value={{ user, login, logout, resetPassword, signup }}
+      value={{ user, login, signup, logout, resetPassword }}
     >
       {children}
     </AuthContext.Provider>

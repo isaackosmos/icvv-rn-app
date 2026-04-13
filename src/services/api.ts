@@ -1,4 +1,4 @@
-const BASE_URL = "https://sua-api.com"; // trocar quando o backend estiver pronto
+const BASE_URL = "https://sua-api.com/api";
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${BASE_URL}${endpoint}`, {
@@ -7,7 +7,7 @@ async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   });
 
   if (!response.ok) {
-    throw new Error(`Erro ${response.status}: ${response.statusText}`);
+    throw new Error(`Erro ${response.status}`);
   }
 
   return response.json();

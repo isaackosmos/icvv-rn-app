@@ -4,11 +4,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
 import styles from "./styles";
-
+import { env } from "@/constants/env";
 import { Member } from "@/services/members";
-
-const FALLBACK_AVATAR =
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80";
 
 interface ProfileHeaderProps {
   member: Member;
@@ -20,7 +17,7 @@ export function ProfileHeader({ member, onEditPress }: ProfileHeaderProps) {
     <View style={styles.container}>
       <View style={styles.avatarWrapper}>
         <Image
-          source={{ uri: member.photo || FALLBACK_AVATAR }}
+          source={{ uri: member.photo || env.fallbackAvatar }}
           style={styles.avatar}
         />
         <TouchableOpacity style={styles.editBtn} onPress={onEditPress}>

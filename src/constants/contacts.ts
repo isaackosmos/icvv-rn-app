@@ -1,3 +1,5 @@
+import { env } from "@/constants/env";
+
 export const contacts = [
   {
     name: "WhatsApp",
@@ -5,7 +7,7 @@ export const contacts = [
     icon: "chat" as const,
     iconColor: "#10b981",
     iconBg: "#d1fae5",
-    url: "https://wa.me/5542984427793",
+    url: `https://wa.me/${env.whatsappNumber}`,
   },
   {
     name: "E-mail",
@@ -13,7 +15,7 @@ export const contacts = [
     icon: "mail" as const,
     iconColor: "#f59e0b",
     iconBg: "#fef3c7",
-    url: "mailto:icvvnet@gmail.com",
+    url: `https://wa.me/${env.whatsappNumber}`,
   },
   {
     name: "Endereço",
@@ -21,6 +23,6 @@ export const contacts = [
     icon: "place" as const,
     iconColor: "#ef4444",
     iconBg: "#fee2e2",
-    url: "https://www.google.com/maps/search/?api=1&query=Rua+Guaira,+5750+Guarapuava+PR",
+    url: env.mapsUrl,
   },
 ];

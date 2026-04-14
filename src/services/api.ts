@@ -1,4 +1,6 @@
-const BASE_URL = "https://sua-api.com/api";
+import { env } from "@/constants/env";
+
+const BASE_URL = env.apiUrl;
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${BASE_URL}${endpoint}`, {

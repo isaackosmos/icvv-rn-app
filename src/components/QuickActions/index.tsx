@@ -8,14 +8,30 @@ import styles from "./styles";
 import { colors } from "@/constants/colors";
 
 const ACTIONS = [
-  { label: "Oração", icon: "favorite-border", path: "/(protected)/prayer" },
-  { label: "Bíblia", icon: "menu-book", path: "/bible" },
-  { label: "ID Digital", icon: "badge", path: "/member-card" },
-  { label: "Ao Vivo", icon: "tv", path: "/live" },
-  { label: "Eventos", icon: "event", path: "/events" },
-  { label: "Testemunhos", icon: "chat-bubble-outline", path: "/testimonials" },
-  { label: "Kids", icon: "shield", path: "/kids" },
-  { label: "Clube ICVV", icon: "star-border", path: "/club" },
+  {
+    label: "Oração",
+    icon: "favorite-border",
+    path: "/(protected)/(screens)/prayer",
+  },
+  { label: "Bíblia", icon: "menu-book", path: "/(protected)/(screens)/bible" },
+  {
+    label: "ID Digital",
+    icon: "badge",
+    path: "/(protected)/(screens)/member-card",
+  },
+  { label: "Ao Vivo", icon: "tv", path: "/(protected)/(tabs)/live" },
+  { label: "Eventos", icon: "event", path: "/(protected)/(screens)/events" },
+  {
+    label: "Testemunhos",
+    icon: "chat-bubble-outline",
+    path: "/(protected)/(screens)/testimonials",
+  },
+  { label: "Kids", icon: "shield", path: "/(protected)/(screens)/kids" },
+  {
+    label: "Clube ICVV",
+    icon: "star-border",
+    path: "/(protected)/(screens)/club",
+  },
 ] as const;
 
 export function QuickActions() {

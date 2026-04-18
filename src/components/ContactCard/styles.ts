@@ -20,9 +20,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  name: { fontSize: 14, fontWeight: "700", color: colors.textPrimary },
-  value: { fontSize: 12, color: colors.textSecondary, marginTop: 2 },
-  text: { flex: 1 },
+  name: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: colors.textPrimary,
+  },
+  value: {
+    fontSize: 12,
+    color: colors.textSecondary,
+    marginTop: 2,
+  },
+  text: {
+    flex: 1,
+  },
 });
 
 export default styles;

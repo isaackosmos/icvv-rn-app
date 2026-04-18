@@ -75,6 +75,7 @@ export default function ProtectedLayout() {
             ),
           }}
         />
+        <Tabs.Screen name="prayer" options={{ href: null }} />
       </Tabs>
     </SafeAreaProvider>
   );

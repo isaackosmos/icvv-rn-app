@@ -9,11 +9,23 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  primary: { backgroundColor: colors.primary },
-  outline: { borderWidth: 1, borderColor: colors.primary },
-  label: { fontSize: 16, fontWeight: "600" },
-  primaryLabel: { color: colors.background },
-  outlineLabel: { color: colors.primary },
+  primary: {
+    backgroundColor: colors.primary,
+  },
+  outline: {
+    borderWidth: 1,
+    borderColor: colors.primary,
+  },
+  label: {
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  primaryLabel: {
+    color: colors.background,
+  },
+  outlineLabel: {
+    color: colors.primary,
+  },
 });
 
 export default styles;

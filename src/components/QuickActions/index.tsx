@@ -8,7 +8,7 @@ import styles from "./styles";
 import { colors } from "@/constants/colors";
 
 const ACTIONS = [
-  { label: "Oração", icon: "favorite-border", path: "/prayer" },
+  { label: "Oração", icon: "favorite-border", path: "/(protected)/prayer" },
   { label: "Bíblia", icon: "menu-book", path: "/bible" },
   { label: "ID Digital", icon: "badge", path: "/member-card" },
   { label: "Ao Vivo", icon: "tv", path: "/live" },

@@ -13,7 +13,7 @@ import { Input } from "@/components/Input";
 import { colors } from "@/constants/colors";
 import { Button } from "@/components/Button";
 
-import { usePrayer } from "@/features/protected/home/userPrayer";
+import { usePrayer } from "@/features/protected/home/usePrayer";
 
 export default function PrayerScreen() {
   const {
@@ -91,7 +91,6 @@ export default function PrayerScreen() {
 
       <Input
         label="Seu pedido"
-        icon="favorite-border"
         value={request}
         onChangeText={setRequest}
         placeholder="Descreva seu pedido de oração..."

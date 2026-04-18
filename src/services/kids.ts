@@ -21,13 +21,18 @@ export interface Room {
 
 export const kidsService = {
   getChildren: () => api.get<Child[]>("/kids/children"),
+
   addChild: (data: Omit<Child, "id" | "status">) =>
     api.post<Child>("/kids/children", data),
+
   checkin: (childId: string, room: string) =>
     api.post<void>(`/kids/children/${childId}/checkin`, { room }),
+
   checkout: (childId: string) =>
     api.post<void>(`/kids/children/${childId}/checkout`, {}),
+
   deleteChild: (childId: string) =>
     api.delete<void>(`/kids/children/${childId}`),
+
   getRooms: () => api.get<Room[]>("/kids/rooms"),
 };

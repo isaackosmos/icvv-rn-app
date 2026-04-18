@@ -17,6 +17,7 @@ export interface Member {
 
 export const membersService = {
   getProfile: () => api.get<Member>("/members/me"),
+
   updateProfile: (data: Partial<Member>) =>
     api.put<Member>("/members/me", data),
 };

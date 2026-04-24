@@ -3,7 +3,7 @@ import React from "react";
 import { PrayerForm } from "@/components/PrayerForm";
 import { PrayerSuccess } from "@/components/PrayerSuccess";
 
-import { usePrayer } from "@/features/protected/home/usePrayer";
+import { usePrayer } from "@/features/protected/screens/usePrayer";
 
 export default function PrayerScreen() {
   const {

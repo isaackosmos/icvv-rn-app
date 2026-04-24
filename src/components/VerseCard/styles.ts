@@ -4,22 +4,28 @@ import { colors } from "@/constants/colors";
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "#0f2044",
+    height: 140,
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.border,
     borderRadius: 16,
-    padding: 24,
-    gap: 8,
+    padding: 20,
+    justifyContent: "space-between",
   },
   verse: {
-    fontSize: 14,
+    fontSize: 13,
     fontStyle: "italic",
-    color: "rgba(255,255,255,0.8)",
-    lineHeight: 22,
+    color: colors.textSecondary,
+    lineHeight: 20,
+    flex: 1,
   },
   ref: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: "700",
     color: colors.primary,
+    textTransform: "uppercase",
     letterSpacing: 1,
+    marginTop: 8,
   },
 });
 

@@ -7,5 +7,11 @@ export const colors = {
   textSecondary: "#6b7280",
   placeholder: "#9ca3af",
   error: "#dc2626",
-  dark: "#0f172a",
+
+  // dark (usada no cartão digital e banners escuros)
+  dark: "#000000",
+  darkSurface: "#0f172a",
+  darkBorder: "rgba(255,255,255,0.1)",
+  darkText: "#ffffff",
+  darkTextMuted: "#6b7280",
 };

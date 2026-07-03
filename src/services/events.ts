@@ -6,11 +6,14 @@ export interface Event {
   description?: string;
   date: string;
   time: string;
+  location: string;
+  address: string;
+  category: string;
   image?: string;
+  price?: string;
 }
 
 export const eventsService = {
   getAll: () => api.get<Event[]>("/events"),
   getById: (id: string) => api.get<Event>(`/events/${id}`),
-  register: (id: string) => api.post<void>(`/events/${id}/register`, {}),
 };

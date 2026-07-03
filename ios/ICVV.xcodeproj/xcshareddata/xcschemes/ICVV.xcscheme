@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ICVVRNAPP.app"
-               BlueprintName = "ICVVRNAPP"
-               ReferencedContainer = "container:ICVVRNAPP.xcodeproj">
+               BuildableName = "ICVV.app"
+               BlueprintName = "ICVV"
+               ReferencedContainer = "container:ICVV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ICVVRNAPPTests.xctest"
-               BlueprintName = "ICVVRNAPPTests"
-               ReferencedContainer = "container:ICVVRNAPP.xcodeproj">
+               BuildableName = "ICVVTests.xctest"
+               BlueprintName = "ICVVTests"
+               ReferencedContainer = "container:ICVV.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ICVVRNAPP.app"
-            BlueprintName = "ICVVRNAPP"
-            ReferencedContainer = "container:ICVVRNAPP.xcodeproj">
+            BuildableName = "ICVV.app"
+            BlueprintName = "ICVV"
+            ReferencedContainer = "container:ICVV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ICVVRNAPP.app"
-            BlueprintName = "ICVVRNAPP"
-            ReferencedContainer = "container:ICVVRNAPP.xcodeproj">
+            BuildableName = "ICVV.app"
+            BlueprintName = "ICVV"
+            ReferencedContainer = "container:ICVV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

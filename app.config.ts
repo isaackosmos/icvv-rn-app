@@ -5,6 +5,13 @@ export default {
     name: "ICVV",
     slug: "icvv",
     scheme: "icvv",
+    ios: {
+      bundleIdentifier: "com.icvv.app",
+      supportsTablet: true,
+    },
+    android: {
+      package: "com.icvv.app",
+    },
     extra: {
       apiUrl: process.env.EXPO_PUBLIC_API_URL,
       whatsappNumber: process.env.EXPO_PUBLIC_WHATSAPP_NUMBER,

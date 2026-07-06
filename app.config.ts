@@ -5,6 +5,7 @@ export default {
     name: "ICVV",
     slug: "icvv",
     scheme: "icvv",
+    plugins: ["expo-router"],
     ios: {
       bundleIdentifier: "com.icvv.app",
       supportsTablet: true,

@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 
 import { clubService, Coupon } from "@/services/club";
-import { useAuth } from "@/context/AuthContext";
+import { useAuthenticatedUser } from "@/context/AuthContext";
 
 interface Voucher {
   coupon: Coupon;
@@ -14,7 +14,7 @@ export function useClub() {
   const [search, setSearch] = useState("");
   const [selectedCoupon, setSelectedCoupon] = useState<Coupon | null>(null);
   const [voucher, setVoucher] = useState<Voucher | null>(null);
-  const { user } = useAuth();
+  const user = useAuthenticatedUser();
 
   useEffect(() => {
     async function fetch() {

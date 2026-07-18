@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
-interface User {
+export interface User {
   email: string;
   name?: string;
   photo?: string;
@@ -46,4 +46,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
 export function useAuth() {
   return useContext(AuthContext);
+}
+
+export function useAuthenticatedUser(): User {
+  const { user } = useAuth();
+  if (!user) {
+    throw new Error(
+      "useAuthenticatedUser must be used within the (protected) route group",
+    );
+  }
+  return user;
 }

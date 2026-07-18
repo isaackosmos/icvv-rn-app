@@ -18,7 +18,7 @@ interface VoucherUser {
 interface VoucherModalProps {
   visible: boolean;
   voucher: { coupon: Coupon; code: string } | null;
-  user: VoucherUser | null;
+  user: VoucherUser;
   onClose: () => void;
 }
 
@@ -35,8 +35,8 @@ export function VoucherModal({
   const qrValue = JSON.stringify({
     couponId: coupon.id,
     company: coupon.companyName,
-    userName: user?.name || "Membro ICVV",
-    userEmail: user?.email,
+    userName: user.name || "Membro ICVV",
+    userEmail: user.email,
     timestamp: new Date().toISOString(),
   });
 
@@ -66,9 +66,9 @@ export function VoucherModal({
           <View style={styles.beneficiary}>
             <Text style={styles.beneficiaryLabel}>Beneficiário</Text>
             <Text style={styles.beneficiaryName}>
-              {user?.name || "Membro ICVV"}
+              {user.name || "Membro ICVV"}
             </Text>
-            <Text style={styles.beneficiaryEmail}>{user?.email}</Text>
+            <Text style={styles.beneficiaryEmail}>{user.email}</Text>
           </View>
 
           <View style={styles.qrBox}>

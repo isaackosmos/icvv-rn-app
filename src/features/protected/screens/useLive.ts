@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 
-import { useAuth } from "@/context/AuthContext";
+import { useAuthenticatedUser } from "@/context/AuthContext";
 import { chatService, ChatMessage } from "@/services/chat";
 
 export function useLive() {
-  const { user } = useAuth();
+  const user = useAuthenticatedUser();
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [text, setText] = useState("");
   const [sending, setSending] = useState(false);
@@ -28,7 +28,7 @@ export function useLive() {
   }
 
   async function handleSend() {
-    if (!user || !text.trim() || sending) return;
+    if (!text.trim() || sending) return;
     setSending(true);
     try {
       await chatService.sendMessage(

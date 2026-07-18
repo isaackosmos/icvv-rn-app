@@ -24,11 +24,11 @@ export default function MemberCardScreen() {
           <MemberCardBack />
         ) : (
           <MemberCardFront
-            name={user?.name ?? "Membro ICVV"}
+            name={user.name ?? "Membro ICVV"}
             role="Membro Comungante"
             since="—"
             memberId="ICVV-0000"
-            photo={user?.photo}
+            photo={user.photo}
           />
         )}
       </TouchableOpacity>

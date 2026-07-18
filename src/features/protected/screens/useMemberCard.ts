@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import { useAuth } from "@/context/AuthContext";
+import { useAuthenticatedUser } from "@/context/AuthContext";
 
 export function useMemberCard() {
   const [flipped, setFlipped] = useState(false);
-  const { user } = useAuth();
+  const user = useAuthenticatedUser();
 
   return {
     flipped,

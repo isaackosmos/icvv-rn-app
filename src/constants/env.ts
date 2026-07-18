@@ -9,5 +9,6 @@ export const env = {
   address: extra.address ?? "",
   mapsUrl: extra.mapsUrl ?? "",
   fallbackAvatar: extra.fallbackAvatar ?? "",
+  fallbackLogo: extra.fallbackLogo ?? "",
   streamUrl: extra.streamUrl ?? "",
 };

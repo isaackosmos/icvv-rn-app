@@ -11,7 +11,7 @@ export interface Coupon {
   terms?: string;
 }
 
-export const couponsService = {
+export const clubService = {
   getAll: () => api.get<Coupon[]>("/coupons"),
   submit: (data: Omit<Coupon, "id">) => api.post<Coupon>("/coupons", data),
 };

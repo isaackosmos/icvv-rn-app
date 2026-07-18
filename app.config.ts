@@ -19,7 +19,6 @@ export default {
       whatsappEmail: process.env.EXPO_PUBLIC_WHATSAPP_EMAIL,
       address: process.env.EXPO_PUBLIC_ADDRESS,
       mapsUrl: process.env.EXPO_PUBLIC_MAPS_URL,
-      fallbackAvatar: process.env.EXPO_PUBLIC_FALLBACK_AVATAR,
       fallbackLogo: process.env.EXPO_PUBLIC_FALLBACK_LOGO,
       streamUrl: process.env.EXPO_PUBLIC_STREAM_URL,
     },

@@ -8,7 +8,6 @@ export const env = {
   whatsappEmail: extra.whatsappEmail ?? "",
   address: extra.address ?? "",
   mapsUrl: extra.mapsUrl ?? "",
-  fallbackAvatar: extra.fallbackAvatar ?? "",
   fallbackLogo: extra.fallbackLogo ?? "",
   streamUrl: extra.streamUrl ?? "",
 };

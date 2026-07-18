@@ -1,11 +1,11 @@
 import React from "react";
 
 import { MaterialIcons } from "@expo/vector-icons";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 
 import styles from "./styles";
-import { env } from "@/constants/env";
 import { Member } from "@/services/members";
+import { getInitials } from "@/utils/avatar";
 
 interface ProfileHeaderProps {
   member: Member;
@@ -16,10 +16,9 @@ export function ProfileHeader({ member, onEditPress }: ProfileHeaderProps) {
   return (
     <View style={styles.container}>
       <View style={styles.avatarWrapper}>
-        <Image
-          source={{ uri: member.photo || env.fallbackAvatar }}
-          style={styles.avatar}
-        />
+        <View style={styles.avatar}>
+          <Text style={styles.avatarText}>{getInitials(member.name)}</Text>
+        </View>
         <TouchableOpacity style={styles.editBtn} onPress={onEditPress}>
           <MaterialIcons name="edit" size={18} color="#fff" />
         </TouchableOpacity>

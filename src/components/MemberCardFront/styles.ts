@@ -40,6 +40,14 @@ const styles = StyleSheet.create({
     borderRadius: 48,
     borderWidth: 2,
     borderColor: colors.border,
+    backgroundColor: colors.primary,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  photoText: {
+    color: "#fff",
+    fontSize: 28,
+    fontWeight: "700",
   },
   name: {
     fontSize: 22,

@@ -18,6 +18,14 @@ const styles = StyleSheet.create({
     borderRadius: 28,
     borderWidth: 3,
     borderColor: colors.border,
+    backgroundColor: colors.primary,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  avatarText: {
+    color: "#fff",
+    fontSize: 32,
+    fontWeight: "700",
   },
   editBtn: {
     position: "absolute",
